@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-screen">
+            <h2 id="question">Question Text</h2>
+            <div class="options-grid">
+                <button class="option-btn" onclick="checkAnswer(0)">A. <span id="text0"></span></button>
+                <button class="option-btn" onclick="checkAnswer(1)">B. <span id="text1"></span></button>
+                <button class="option-btn" onclick="checkAnswer(2)">C. <span id="text2"></span></button>
+                <button class="option-btn" onclick="checkAnswer(3)">D. <span id="text3"></span></button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hide">
+            <h2>Quiz Over!</h2>
+            <p>Your Score: <span id="final-score">0</span> / 3</p>
+            <p>High Score: <span id="high-score">0</span></p>
+            <button class="restart-btn" onclick="resetQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
